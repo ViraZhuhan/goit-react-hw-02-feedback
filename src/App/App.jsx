@@ -7,21 +7,21 @@ import { Container } from './App.styled';
 
 class App extends Component {
   static defaultProps = {
-    initialGood: 0,
-    initialNeutral: 0,
-    initialBad: 0,
+    good: 0,
+    neutral: 0,
+    bad: 0,
   };
 
   static propTypes = {
-    initialGood: PropTypes.number.isRequired,
-    initialNeutral: PropTypes.number.isRequired,
-    initialBad: PropTypes.number.isRequired,
+    good: PropTypes.number.isRequired,
+    neutral: PropTypes.number.isRequired,
+    bad: PropTypes.number.isRequired,
   };
 
   state = {
-    good: this.props.initialGood,
-    neutral: this.props.initialNeutral,
-    bad: this.props.initialBad,
+    good: this.props.good,
+    neutral: this.props.neutral,
+    bad: this.props.bad,
   };
 
   onLeaveFeedback = ({ target: { name } }) => {
