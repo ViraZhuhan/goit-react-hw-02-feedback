@@ -6,18 +6,15 @@ class Notification extends Component {
   static defaultProps = {
     message: 'There is no feedback',
   };
-
   static propTypes = {
     message: PropTypes.string.isRequired,
   };
-
   state = {
     message: this.props.message,
   };
 
   render() {
     const {message} = this.state
-
     return (
       <div>
         <Message>{message}</Message>
